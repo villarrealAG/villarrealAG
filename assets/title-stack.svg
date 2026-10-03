@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="72" viewBox="0 0 840 72" role="img" aria-label="Tecnologías y Herramientas">
+  <defs>
+    <clipPath id="pill"><rect x="2" y="10" width="400" height="52" rx="26"/></clipPath>
+    <filter id="blur" filterUnits="userSpaceOnUse" x="-100" y="-100" width="600" height="272"><feGaussianBlur stdDeviation="16"/></filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#11173a"/><stop offset="1" stop-color="#1e1236"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".2"/><stop offset="1" stop-color="#fff" stop-opacity=".04"/></linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".8"/><stop offset=".45" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#fff" stop-opacity=".45"/></linearGradient>
+    <linearGradient id="icon" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bf5af2"/><stop offset="1" stop-color="#5e5ce6"/></linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".45"/><stop offset=".6" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <linearGradient id="line" gradientUnits="userSpaceOnUse" x1="418" y1="0" x2="836" y2="0"><stop offset="0" stop-color="#5e5ce6" stop-opacity=".7"/><stop offset="1" stop-color="#5e5ce6" stop-opacity="0"/></linearGradient>
+    <linearGradient id="spark" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#bf5af2" stop-opacity="0"/><stop offset=".5" stop-color="#bf5af2"/><stop offset="1" stop-color="#bf5af2" stop-opacity="0"/></linearGradient>
+  </defs>
+  <style>
+    .t { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI Variable Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: #fff; }
+    .pill { opacity: 0; animation: slide 1s cubic-bezier(.22,1,.36,1) forwards; }
+    @keyframes slide { from { opacity: 0; transform: translateX(-16px); } to { opacity: 1; transform: none; } }
+    .ico { transform-box: fill-box; transform-origin: center; opacity: 0; animation: pop .9s cubic-bezier(.34,1.56,.64,1) .2s forwards; }
+    @keyframes pop { from { opacity: 0; transform: scale(.5); } to { opacity: 1; transform: none; } }
+    .b { animation: drift 10s cubic-bezier(.45,0,.55,1) infinite alternate; }
+    @keyframes drift { from { transform: translateX(0); } to { transform: translateX(200px); } }
+    .line { stroke-dasharray: 800; stroke-dashoffset: 800; animation: draw 1.6s cubic-bezier(.22,1,.36,1) .35s forwards; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    .spark { opacity: 0; animation: run 6s cubic-bezier(.45,0,.55,1) 2s infinite; }
+    @keyframes run { 0% { opacity: 0; transform: translateX(0); } 10% { opacity: 1; } 45% { opacity: 0; transform: translateX(362px); } 100% { opacity: 0; transform: translateX(362px); } }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+      .pill, .ico { opacity: 1; } .line { stroke-dashoffset: 0; }
+    }
+  </style>
+
+  <g class="pill">
+    <g clip-path="url(#pill)">
+      <rect x="0" y="0" width="404" height="72" fill="url(#bg)"/>
+      <g filter="url(#blur)">
+        <circle class="b" cx="30" cy="20" r="34" fill="#5e5ce6" opacity=".9"/>
+        <circle cx="380" cy="62" r="30" fill="#bf5af2" opacity=".55"/>
+      </g>
+      <rect x="0" y="0" width="404" height="72" fill="url(#glass)"/>
+    </g>
+    <rect x="2.75" y="10.75" width="398.5" height="50.5" rx="25.25" fill="none" stroke="url(#rim)" stroke-width="1.5"/>
+    <text class="t" x="66" y="43.5" font-size="21" font-weight="700" letter-spacing="-.3">Tecnologías y Herramientas</text>
+  </g>
+
+  <g class="ico">
+    <rect x="12" y="18" width="36" height="36" rx="10" fill="url(#icon)"/>
+    <rect x="12" y="18" width="36" height="36" rx="10" fill="url(#gloss)"/>
+    <g transform="translate(19 25) scale(.92)"><g fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M12 3 21 8 12 13 3 8z" fill="#fff"/><path d="M3 12.5 12 17.5 21 12.5"/><path d="M3 16.5 12 21.5 21 16.5"/></g></g>
+  </g>
+
+  <path class="line" d="M418 36.5H836" stroke="url(#line)" stroke-width="1.5" stroke-linecap="round"/>
+  <rect class="spark" x="418" y="35.5" width="60" height="3" rx="1.5" fill="url(#spark)"/>
+</svg>

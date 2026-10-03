@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="270" height="72" viewBox="0 0 270 72" role="img" aria-label="GitHub: @villarrealAG">
+  <defs>
+    <clipPath id="f"><rect x="1" y="1" width="268" height="70" rx="35"/></clipPath>
+    <filter id="blur" filterUnits="userSpaceOnUse" x="-100" y="-100" width="470" height="272"><feGaussianBlur stdDeviation="18"/></filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#11173a"/><stop offset="1" stop-color="#1e1236"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".22"/><stop offset="1" stop-color="#fff" stop-opacity=".05"/></linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".85"/><stop offset=".45" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#fff" stop-opacity=".45"/></linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".25"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <linearGradient id="icon" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6e7681"/><stop offset="1" stop-color="#30363d"/></linearGradient>
+  </defs>
+  <style>
+    .t { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI Variable Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: #fff; }
+    .all { transform-box: fill-box; transform-origin: center; opacity: 0; animation: pop 1s cubic-bezier(.34,1.56,.64,1) forwards; }
+    @keyframes pop { from { opacity: 0; transform: scale(.85); } to { opacity: 1; transform: none; } }
+    .b { animation: drift 9s cubic-bezier(.45,0,.55,1) infinite alternate; }
+    @keyframes drift { from { transform: translateX(0); } to { transform: translateX(150px); } }
+    .sweep { transform: translateX(-140px); animation: sweep 7s cubic-bezier(.45,0,.55,1) 1.5s infinite; }
+    @keyframes sweep { 0% { transform: translateX(-140px); } 30%, 100% { transform: translateX(330px); } }
+    .arrow { animation: nudge 2.6s cubic-bezier(.45,0,.55,1) infinite; }
+    @keyframes nudge { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(4px); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .all { opacity: 1; } }
+  </style>
+  <g class="all">
+    <g clip-path="url(#f)">
+      <rect width="270" height="72" fill="url(#bg)"/>
+      <g filter="url(#blur)">
+        <circle class="b" cx="40" cy="30" r="40" fill="#6e7681" opacity=".85"/>
+        <circle cx="240" cy="72" r="36" fill="#b25cff" opacity=".5"/>
+      </g>
+      <rect width="270" height="72" fill="url(#glass)"/>
+      <rect class="sweep" x="0" y="0" width="110" height="72" fill="url(#shine)"/>
+    </g>
+    <rect x="1.75" y="1.75" width="266.5" height="68.5" rx="34.25" fill="none" stroke="url(#rim)" stroke-width="1.5"/>
+    <circle cx="36" cy="36" r="24" fill="url(#icon)" stroke="#fff" stroke-opacity=".35"/>
+    <g transform="translate(24 24)"><path transform="scale(1.5)" fill="#fff" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></g>
+    <text class="t" x="72" y="33" font-size="18" font-weight="700">GitHub</text>
+    <text class="t" x="72" y="52" font-size="13" opacity=".7">@villarrealAG</text>
+    <g class="arrow"><text class="t" x="238" y="42" font-size="18" font-weight="600" text-anchor="middle" opacity=".85">→</text></g>
+  </g>
+</svg>

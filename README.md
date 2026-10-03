@@ -4,12 +4,14 @@
 
 <br />
 
-## ✦ Sobre mí
+<img src="./assets/title-about.svg" width="100%" alt="Sobre mí" />
 
 Soy un programador mexicano 🇲🇽 enfocado en el desarrollo web. Me gusta aprender nuevas tecnologías y crear soluciones útiles, cuidando los detalles y aplicando buenas prácticas.
 <!-- Ajusta este párrafo: tu carrera/escuela o trabajo, qué te apasiona, en qué te quieres especializar. -->
 
-## ✦ Tecnologías y Herramientas
+<br />
+
+<img src="./assets/title-stack.svg" width="100%" alt="Tecnologías y Herramientas" />
 
 <div align="center">
 
@@ -25,33 +27,48 @@ Soy un programador mexicano 🇲🇽 enfocado en el desarrollo web. Me gusta apr
 </div>
 <!-- Para agregar o quitar íconos edita la lista después de "i=". Nombres disponibles: https://github.com/tandpfun/skill-icons#icons-list -->
 
-## ✦ Proyecto Destacado
+<br />
 
+<img src="./assets/title-project.svg" width="100%" alt="Proyecto Destacado" />
+
+<img src="./assets/project-pending.svg" width="100%" alt="Próximamente — Estoy construyendo algo nuevo, muy pronto aquí" />
+<!-- Cuando tengas tu proyecto, cambia esta tarjeta. Ya existe una lista para ServiceActivities:
 <a href="https://github.com/villarrealAG/ServiceActivities">
   <img src="./assets/project-serviceactivities.svg" width="100%" alt="ServiceActivities — Evidencia de mis actividades de servicio social (JavaScript)" />
 </a>
+-->
 
-## ✦ Actualmente aprendiendo
+<br />
+
+<img src="./assets/title-learning.svg" width="100%" alt="Actualmente aprendiendo" />
 
 <img src="https://skillicons.dev/icons?i=react&theme=dark" width="40" alt="React Native" align="left" />
 
 **📱 React Native**: quiero y estoy aprendiendo a crear apps móviles, una de las áreas que más me emociona.
 
 <br clear="left" />
-<!-- ¿Qué más? Un framework (React, Node.js...), una certificación, inglés... -->
+<!-- ¿Qué más? Un framework, una certificación, inglés... -->
 
-## ✦ Intereses
+<br />
+
+<img src="./assets/title-interests.svg" width="100%" alt="Intereses" />
 
 - 💻 Desarrollo web
 - 🎨 Diseño de interfaces limpias, estilo iOS
 <!-- Agrega más: deportes, música, videojuegos, IA... -->
 
-## ✦ Cómo contactarme
+<br />
 
-<p align="left">
-  <a href="https://github.com/villarrealAG"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-  <a href="https://www.linkedin.com/in/agust%C3%ADn-villarreal-6bb86337a"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<img src="./assets/title-contact.svg" width="100%" alt="Cómo contactarme" />
+
+<div align="center">
+  <a href="https://github.com/villarrealAG"><img src="./assets/btn-github.svg" width="270" alt="GitHub: @villarrealAG" /></a>
+  <a href="https://www.linkedin.com/in/agust%C3%ADn-villarreal-6bb86337a"><img src="./assets/btn-linkedin.svg" width="270" alt="LinkedIn: Agustín Villarreal" /></a>
   <!-- Descomenta y pon tu correo:
-  <a href="mailto:tu-correo@ejemplo.com"><img src="https://img.shields.io/badge/Correo-0A84FF?style=for-the-badge&logo=maildotru&logoColor=white" alt="Correo" /></a>
+  <a href="mailto:tu-correo@ejemplo.com"><img src="./assets/btn-mail.svg" width="270" alt="Correo" /></a>
   -->
-</p>
+</div>
+
+<br />
+
+<img src="./assets/footer.svg" width="100%" alt="Gracias por pasar por aquí — Hecho con cariño en México" />

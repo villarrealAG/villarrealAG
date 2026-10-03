@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="270" height="72" viewBox="0 0 270 72" role="img" aria-label="Correo: Escríbeme">
+  <defs>
+    <clipPath id="f"><rect x="1" y="1" width="268" height="70" rx="35"/></clipPath>
+    <filter id="blur" filterUnits="userSpaceOnUse" x="-100" y="-100" width="470" height="272"><feGaussianBlur stdDeviation="18"/></filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#11173a"/><stop offset="1" stop-color="#1e1236"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".22"/><stop offset="1" stop-color="#fff" stop-opacity=".05"/></linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".85"/><stop offset=".45" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#fff" stop-opacity=".45"/></linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".25"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <linearGradient id="icon" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#64d2ff"/><stop offset="1" stop-color="#5e5ce6"/></linearGradient>
+  </defs>
+  <style>
+    .t { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI Variable Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: #fff; }
+    .all { transform-box: fill-box; transform-origin: center; opacity: 0; animation: pop 1s cubic-bezier(.34,1.56,.64,1) forwards; }
+    @keyframes pop { from { opacity: 0; transform: scale(.85); } to { opacity: 1; transform: none; } }
+    .b { animation: drift 9s cubic-bezier(.45,0,.55,1) infinite alternate; }
+    @keyframes drift { from { transform: translateX(0); } to { transform: translateX(150px); } }
+    .sweep { transform: translateX(-140px); animation: sweep 7s cubic-bezier(.45,0,.55,1) 1.5s infinite; }
+    @keyframes sweep { 0% { transform: translateX(-140px); } 30%, 100% { transform: translateX(330px); } }
+    .arrow { animation: nudge 2.6s cubic-bezier(.45,0,.55,1) infinite; }
+    @keyframes nudge { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(4px); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .all { opacity: 1; } }
+  </style>
+  <g class="all">
+    <g clip-path="url(#f)">
+      <rect width="270" height="72" fill="url(#bg)"/>
+      <g filter="url(#blur)">
+        <circle class="b" cx="40" cy="30" r="40" fill="#64d2ff" opacity=".85"/>
+        <circle cx="240" cy="72" r="36" fill="#b25cff" opacity=".5"/>
+      </g>
+      <rect width="270" height="72" fill="url(#glass)"/>
+      <rect class="sweep" x="0" y="0" width="110" height="72" fill="url(#shine)"/>
+    </g>
+    <rect x="1.75" y="1.75" width="266.5" height="68.5" rx="34.25" fill="none" stroke="url(#rim)" stroke-width="1.5"/>
+    <circle cx="36" cy="36" r="24" fill="url(#icon)" stroke="#fff" stroke-opacity=".35"/>
+    <g transform="translate(24 24)"><g fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"><rect x="1" y="3.5" width="22" height="17" rx="3"/><path d="m2 5.5 10 8 10-8"/></g></g>
+    <text class="t" x="72" y="33" font-size="18" font-weight="700">Correo</text>
+    <text class="t" x="72" y="52" font-size="13" opacity=".7">Escríbeme</text>
+    <g class="arrow"><text class="t" x="238" y="42" font-size="18" font-weight="600" text-anchor="middle" opacity=".85">→</text></g>
+  </g>
+</svg>
